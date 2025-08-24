@@ -25,7 +25,7 @@ Let's trace the algorithm with the number `12321`. We will track the state of `x
 
 | `x`    | `revertedNum` | Loop Condition (`x > revertedNum`) |
 | :----- | :--------------- | :------------------------------------ |
-| `1232` | `1`              | `1232 > 1` is **True**. Continue.     |
+| `1232` | `1`              | `1232 > 1` is **True**, then Continue.     |
 
 **Loop 2:**
 
@@ -35,7 +35,7 @@ Let's trace the algorithm with the number `12321`. We will track the state of `x
 
 | `x`   | `revertedNum` | Loop Condition (`x > revertedNum`) |
 | :---- | :--------------- | :------------------------------------ |
-| `123` | `12`             | `123 > 12` is **True**. Continue.     |
+| `123` | `12`             | `123 > 12` is **True**, then Continue.     |
 
 **Loop 3:**
 
@@ -45,7 +45,7 @@ Let's trace the algorithm with the number `12321`. We will track the state of `x
 
 | `x`  | `revertedNum` | Loop Condition (`x > revertedNum`) |
 | :--- | :--------------- | :------------------------------------ |
-| `12` | `123`            | `12 > 123` is **False**. Stop loop.   |
+| `12` | `123`            | `12 > 123` is **False**, then Stop loop.   |
 
 ### The Final Check
 
