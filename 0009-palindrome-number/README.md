@@ -15,7 +15,7 @@ Let's trace the algorithm with the number `12321`. We will track the state of `x
 
 | `x`     | `revertedNum` | Loop Condition (`x > revertedNum`) |
 | :------ | :--------------- | :------------------------------------ |
-| `12321` | `0`              | `12321 > 0` is **True**. Continue.    |
+| `12321` | `0`              | `12321 > 0` is **True**, then Continue.    |
 
 **Loop 1:**
 
