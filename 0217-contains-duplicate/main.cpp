@@ -1,14 +1,13 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        // storing umap with format {nums[i]:i}
-        unordered_map<int,int> umap;
+        // storing uset with format {nums[i]:i}
+        unordered_set<int> uset;
         // iterate with o(n) time complexity
         for(int i = 0; i < nums.size(); i++) {
-            // if the curr already exist inside umap, it means duplicate has been found
-            if(umap.count(nums[i])) return true;
-            // save the curr into umap
-            umap[nums[i]] = 0;
+            // if the current element already exist inside uset
+            if(uset.count(nums[i])) return true;
+            uset.insert(nums[i]);
         }
         return false;   
     }
