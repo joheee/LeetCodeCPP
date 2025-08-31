@@ -11,19 +11,17 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        // for iterate within the head
-        ListNode *curr = head;
         // store the reverse list
         ListNode *prev = nullptr;
-        while(curr != nullptr) {
-            // temporary next for store curr->next
-            ListNode *next = curr->next;
-            // direct curr->next to prev because prev is always one step behind the curr
-            curr->next = prev;
-            // move prev into curr
-            prev = curr;
-            // move curr into temporary next 
-            curr = next;
+        while(head != nullptr) {
+            // temporary next for store head->next
+            ListNode *next = head->next;
+            // direct head->next to prev because prev is always one step behind the head
+            head->next = prev;
+            // move prev into head
+            prev = head;
+            // move head into temporary next 
+            head = next;
         }
         return prev;
     }
